@@ -127,6 +127,8 @@ transition: color 200ms;
     height: 100%;
     position: fixed;
     top: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .modal {
@@ -144,4 +146,11 @@ transition: color 200ms;
     top: 8px;
     cursor: pointer;
 
+}
+
+/* === MODAL.ACTIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
